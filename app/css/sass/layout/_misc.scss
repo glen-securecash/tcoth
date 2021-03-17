@@ -1,0 +1,10 @@
+/* --------------------------------
+ misc
+* ---------------------------------*/
+/*-------------- hr - divider --------------*/
+.divider-dotted {
+	// background: $color-gold;
+	border-top: 3px dotted $color-gold;
+	height: 3px;
+	width: 20%;
+}

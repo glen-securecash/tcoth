@@ -1,0 +1,123 @@
+/* --------------------------------
+ Footer
+* ---------------------------------*/
+
+.main-footer {
+  background: url('../../../images/new/footer-bgr.jpg') no-repeat;
+  background-size: cover;
+  padding: 0 40px;
+  // height: 480px;
+  
+  
+  &--wrap {
+    display: flex;
+    // max-width: 1366px;
+    justify-content: flex-end;
+    height: 480px;
+    align-items: center;
+  }
+
+  &--logo-area {
+    // width: 28%;
+    // background-color: red;
+    height: 100%;
+  }
+
+  &--contact {
+    width: 37.8%;
+    padding: 0 90px 0 82px;
+    
+    
+    ul {
+      list-style: none;
+
+      a {
+        color: $color-black;
+      }
+      
+    }
+
+    &__main {
+      
+      li {
+        
+        padding: 4px 0;
+
+        &::after {
+          content: '';
+          display: block;
+          border-top: 3px dotted $color-black;
+          width: 93%;
+          margin-left: 40px;
+          margin-top: 10px;
+          
+        }
+        &:last-child::after{
+          content: '';
+          display: block;
+          border-top: none
+                    
+        }
+
+        p {
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+
+        a {
+          color: $color-black;
+          font-size: 20px;
+        }
+
+        i {
+          text-align: center;
+          margin-right: 10px;
+          font-size: 22px;
+          width: 24px;
+        }
+      }
+    }
+
+    &__phone {
+      font-weight: 700;
+
+      a {
+        font-size: 22px;
+      }
+    }
+
+    &__social {
+      margin-left: 40px;
+      display: flex;
+     
+      li {
+        margin-right: 16px;
+        
+        a {
+          height: 68px;
+          width: 68px;
+          background: $color-black;
+          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          
+          i {
+            font-size: 42px;   
+            color: $color-gold;
+          }
+
+          &:hover {
+            background: rgb(107, 107, 107);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--map {
+    width: 34.2%;
+  }
+}
